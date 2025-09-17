@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="5.0" etag="xxx" version="22.1.16" type="device">
+  <diagram name="Spring AOP Class Diagram" id="spring-aop-class-diagram">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="Spring AOP 프로젝트 클래스 다이어그램" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="400" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Main Class -->
+        <mxCell id="main-class" value="&lt;b&gt;Main&lt;/b&gt;&lt;br&gt;&lt;br&gt;+ main(args: String[]): void&lt;br&gt;&lt;br&gt;&lt;i&gt;메인 클래스&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="50" y="100" width="200" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- ProjectConfig Class -->
+        <mxCell id="config-class" value="&lt;b&gt;ProjectConfig&lt;/b&gt;&lt;br&gt;&lt;br&gt;+ loggingAspect(): LoggingAspect&lt;br&gt;+ securityAspect(): SecurityAspect&lt;br&gt;&lt;br&gt;&lt;i&gt;Spring 설정 클래스&lt;/i&gt;&lt;br&gt;@Configuration&lt;br&gt;@EnableAspectJAutoProxy&lt;br&gt;@ComponentScan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="100" width="250" height="120" as="geometry" />
+        </mxCell>
+        
+        <!-- LoggingAspect Class -->
+        <mxCell id="logging-aspect" value="&lt;b&gt;LoggingAspect&lt;/b&gt;&lt;br&gt;&lt;br&gt;- logger: Logger&lt;br&gt;&lt;br&gt;+ log(joinPoint: ProceedingJoinPoint): Object&lt;br&gt;+ setLogger(logger: Logger): void&lt;br&gt;&lt;br&gt;&lt;i&gt;로깅 Aspect&lt;/i&gt;&lt;br&gt;@Aspect&lt;br&gt;@Around(&quot;@annotation(ToLog)&quot;)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="650" y="100" width="250" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- SecurityAspect Class -->
+        <mxCell id="security-aspect" value="&lt;b&gt;SecurityAspect&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;보안 Aspect&lt;/i&gt;&lt;br&gt;@Aspect" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="950" y="100" width="150" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- ToLog Annotation -->
+        <mxCell id="tolog-annotation" value="&lt;b&gt;@ToLog&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;커스텀 어노테이션&lt;/i&gt;&lt;br&gt;@Retention(RUNTIME)&lt;br&gt;@Target(METHOD)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="200" height="100" as="geometry" />
+        </mxCell>
+        
+        <!-- CommentService Class -->
+        <mxCell id="comment-service" value="&lt;b&gt;CommentService&lt;/b&gt;&lt;br&gt;&lt;br&gt;- logger: Logger&lt;br&gt;&lt;br&gt;+ publishComment(comment: Comment): String&lt;br&gt;+ setLogger(logger: Logger): void&lt;br&gt;&lt;br&gt;&lt;i&gt;댓글 서비스&lt;/i&gt;&lt;br&gt;@Service&lt;br&gt;@ToLog" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="350" y="300" width="250" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Comment Model -->
+        <mxCell id="comment-model" value="&lt;b&gt;Comment&lt;/b&gt;&lt;br&gt;&lt;br&gt;- text: String&lt;br&gt;- author: String&lt;br&gt;&lt;br&gt;+ getText(): String&lt;br&gt;+ setText(text: String): void&lt;br&gt;+ getAuthor(): String&lt;br&gt;+ setAuthor(author: String): void&lt;br&gt;&lt;br&gt;&lt;i&gt;댓글 도메인 모델&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="650" y="300" width="250" height="140" as="geometry" />
+        </mxCell>
+        
+        <!-- Spring Framework Classes -->
+        <mxCell id="spring-context" value="&lt;b&gt;AnnotationConfigApplicationContext&lt;/b&gt;&lt;br&gt;&lt;br&gt;&lt;i&gt;Spring 컨테이너&lt;/i&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=12;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="950" y="300" width="200" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- Relationships -->
+        <!-- Main -> ProjectConfig -->
+        <mxCell id="rel1" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="main-class" target="config-class">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel1-label" value="사용" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="rel1">
+          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- ProjectConfig -> LoggingAspect -->
+        <mxCell id="rel2" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="config-class" target="logging-aspect">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel2-label" value="생성" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="rel2">
+          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- ProjectConfig -> SecurityAspect -->
+        <mxCell id="rel3" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="config-class" target="security-aspect">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel3-label" value="생성" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="rel3">
+          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- CommentService -> Comment -->
+        <mxCell id="rel4" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="comment-service" target="comment-model">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel4-label" value="사용" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="rel4">
+          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- CommentService -> ToLog -->
+        <mxCell id="rel5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="comment-service" target="tolog-annotation">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel5-label" value="어노테이션" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="rel5">
+          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- LoggingAspect -> ToLog -->
+        <mxCell id="rel6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="logging-aspect" target="tolog-annotation">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel6-label" value="인터셉션" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="rel6">
+          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Main -> CommentService -->
+        <mxCell id="rel7" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="main-class" target="comment-service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel7-label" value="호출" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="rel7">
+          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Spring Context -> CommentService -->
+        <mxCell id="rel8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="spring-context" target="comment-service">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="400" as="sourcePoint" />
+            <mxPoint x="450" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel8-label" value="관리" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" vertex="1" connectable="0" parent="rel8">
+          <mxGeometry x="-0.2" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Legend -->
+        <mxCell id="legend-title" value="📋 클래스 타입별 색상 구분" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="500" width="300" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend1" value="메인 클래스" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="50" y="540" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend2" value="설정 클래스" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="160" y="540" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend3" value="Aspect 클래스" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="270" y="540" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend4" value="어노테이션" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="380" y="540" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend5" value="서비스 클래스" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="490" y="540" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend6" value="도메인 모델" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="600" y="540" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="legend7" value="Spring 프레임워크" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="710" y="540" width="120" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Notes -->
+        <mxCell id="note1" value="💡 주요 특징:&#xa;&#xa;• @EnableAspectJAutoProxy로 AOP 활성화&#xa;• @ToLog 어노테이션으로 메서드 인터셉션&#xa;• LoggingAspect가 자동으로 로깅 처리&#xa;• Spring 컨테이너가 모든 Bean 관리" style="shape=note;strokeWidth=2;fontSize=12;size=20;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#666600;" vertex="1" parent="1">
+          <mxGeometry x="50" y="600" width="300" height="120" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="note2" value="🔄 AOP 동작 원리:&#xa;&#xa;1. Spring이 CommentService 프록시 생성&#xa;2. @ToLog 어노테이션 감지&#xa;3. LoggingAspect 자동 실행&#xa;4. 메서드 실행 전후 로깅&#xa;5. 원본 메서드 실행 후 결과 반환" style="shape=note;strokeWidth=2;fontSize=12;size=20;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#2e5984;" vertex="1" parent="1">
+          <mxGeometry x="400" y="600" width="300" height="120" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

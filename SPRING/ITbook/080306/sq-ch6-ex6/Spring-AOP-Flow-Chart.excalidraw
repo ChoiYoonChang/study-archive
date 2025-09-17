@@ -1,0 +1,1279 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "type": "rectangle",
+      "version": 1,
+      "id": "start",
+      "x": 400,
+      "y": 50,
+      "width": 120,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "arrow",
+          "id": "arrow1"
+        }
+      ],
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "프로그램 시작\nMain.main()",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "프로그램 시작\nMain.main()",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "rectangle",
+      "version": 1,
+      "id": "spring-context",
+      "x": 400,
+      "y": 150,
+      "width": 120,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "arrow",
+          "id": "arrow1"
+        },
+        {
+          "type": "arrow",
+          "id": "arrow2"
+        }
+      ],
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "Spring 컨테이너 생성\nAnnotationConfigApplicationContext",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "Spring 컨테이너 생성\nAnnotationConfigApplicationContext",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "rectangle",
+      "version": 1,
+      "id": "config-load",
+      "x": 400,
+      "y": 250,
+      "width": 120,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "arrow",
+          "id": "arrow2"
+        },
+        {
+          "type": "arrow",
+          "id": "arrow3"
+        }
+      ],
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "ProjectConfig 로드\n@EnableAspectJAutoProxy\n@Bean 등록",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "ProjectConfig 로드\n@EnableAspectJAutoProxy\n@Bean 등록",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "rectangle",
+      "version": 1,
+      "id": "bean-creation",
+      "x": 400,
+      "y": 350,
+      "width": 120,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffec99",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "arrow",
+          "id": "arrow3"
+        },
+        {
+          "type": "arrow",
+          "id": "arrow4"
+        }
+      ],
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "Bean 생성\n- LoggingAspect\n- SecurityAspect\n- CommentService",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "Bean 생성\n- LoggingAspect\n- SecurityAspect\n- CommentService",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "rectangle",
+      "version": 1,
+      "id": "proxy-creation",
+      "x": 400,
+      "y": 450,
+      "width": 120,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#d0bfff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "arrow",
+          "id": "arrow4"
+        },
+        {
+          "type": "arrow",
+          "id": "arrow5"
+        }
+      ],
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "AOP 프록시 생성\nCommentService 프록시",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "AOP 프록시 생성\nCommentService 프록시",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "rectangle",
+      "version": 1,
+      "id": "method-call",
+      "x": 400,
+      "y": 550,
+      "width": 120,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "arrow",
+          "id": "arrow5"
+        },
+        {
+          "type": "arrow",
+          "id": "arrow6"
+        }
+      ],
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "메서드 호출\nservice.publishComment()",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "메서드 호출\nservice.publishComment()",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "diamond",
+      "version": 1,
+      "id": "annotation-check",
+      "x": 400,
+      "y": 650,
+      "width": 120,
+      "height": 80,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#fff3bf",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "arrow",
+          "id": "arrow6"
+        },
+        {
+          "type": "arrow",
+          "id": "arrow7"
+        },
+        {
+          "type": "arrow",
+          "id": "arrow8"
+        }
+      ],
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "@ToLog\n어노테이션\n체크",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "@ToLog\n어노테이션\n체크",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "rectangle",
+      "version": 1,
+      "id": "logging-aspect",
+      "x": 200,
+      "y": 680,
+      "width": 120,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "arrow",
+          "id": "arrow7"
+        },
+        {
+          "type": "arrow",
+          "id": "arrow9"
+        }
+      ],
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "LoggingAspect\n실행\n@Around",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "LoggingAspect\n실행\n@Around",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "rectangle",
+      "version": 1,
+      "id": "actual-method",
+      "x": 400,
+      "y": 780,
+      "width": 120,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "arrow",
+          "id": "arrow8"
+        },
+        {
+          "type": "arrow",
+          "id": "arrow10"
+        }
+      ],
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "실제 메서드\n실행\npublishComment()",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "실제 메서드\n실행\npublishComment()",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "rectangle",
+      "version": 1,
+      "id": "logging-complete",
+      "x": 200,
+      "y": 880,
+      "width": 120,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "arrow",
+          "id": "arrow9"
+        },
+        {
+          "type": "arrow",
+          "id": "arrow11"
+        }
+      ],
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "LoggingAspect\n완료\n결과 로깅",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "LoggingAspect\n완료\n결과 로깅",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "rectangle",
+      "version": 1,
+      "id": "return-result",
+      "x": 400,
+      "y": 880,
+      "width": 120,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "arrow",
+          "id": "arrow10"
+        },
+        {
+          "type": "arrow",
+          "id": "arrow11"
+        }
+      ],
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "결과 반환\n\"SUCCESS\"",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "결과 반환\n\"SUCCESS\"",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "rectangle",
+      "version": 1,
+      "id": "end",
+      "x": 400,
+      "y": 980,
+      "width": 120,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 3
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": [
+        {
+          "type": "arrow",
+          "id": "arrow12"
+        }
+      ],
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "프로그램 종료",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "프로그램 종료",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "arrow",
+      "version": 1,
+      "id": "arrow1",
+      "x": 460,
+      "y": 110,
+      "width": 0,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "start",
+        "gap": 0,
+        "focus": "0"
+      },
+      "endBinding": {
+        "elementId": "spring-context",
+        "gap": 0,
+        "focus": "0"
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 1,
+      "id": "arrow2",
+      "x": 460,
+      "y": 210,
+      "width": 0,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "spring-context",
+        "gap": 0,
+        "focus": "0"
+      },
+      "endBinding": {
+        "elementId": "config-load",
+        "gap": 0,
+        "focus": "0"
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 1,
+      "id": "arrow3",
+      "x": 460,
+      "y": 310,
+      "width": 0,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "config-load",
+        "gap": 0,
+        "focus": 0
+      },
+      "endBinding": {
+        "elementId": "bean-creation",
+        "gap": 0,
+        "focus": 0
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 1,
+      "id": "arrow4",
+      "x": 460,
+      "y": 410,
+      "width": 0,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "bean-creation",
+        "gap": 0,
+        "focus": 0
+      },
+      "endBinding": {
+        "elementId": "proxy-creation",
+        "gap": 0,
+        "focus": 0
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 1,
+      "id": "arrow5",
+      "x": 460,
+      "y": 510,
+      "width": 0,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "proxy-creation",
+        "gap": 0,
+        "focus": 0
+      },
+      "endBinding": {
+        "elementId": "method-call",
+        "gap": 0,
+        "focus": 0
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 1,
+      "id": "arrow6",
+      "x": 460,
+      "y": 610,
+      "width": 0,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "method-call",
+        "gap": 0,
+        "focus": 0"
+      },
+      "endBinding": {
+        "elementId": "annotation-check",
+        "gap": 0,
+        "focus": "0"
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 1,
+      "id": "arrow7",
+      "x": 400,
+      "y": 690,
+      "width": 40,
+      "height": 0,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "annotation-check",
+        "gap": 0,
+        "focus": "0"
+      },
+      "endBinding": {
+        "elementId": "logging-aspect",
+        "gap": 0,
+        "focus": "0"
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          -40,
+          0
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 1,
+      "id": "arrow8",
+      "x": 460,
+      "y": 690,
+      "width": 0,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "annotation-check",
+        "gap": 0,
+        "focus": "0"
+      },
+      "endBinding": {
+        "elementId": "actual-method",
+        "gap": 0,
+        "focus": "0"
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 1,
+      "id": "arrow9",
+      "x": 200,
+      "y": 740,
+      "width": 0,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "logging-aspect",
+        "gap": 0,
+        "focus": "0"
+      },
+      "endBinding": {
+        "elementId": "logging-complete",
+        "gap": 0,
+        "focus": "0"
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 1,
+      "id": "arrow10",
+      "x": 460,
+      "y": 840,
+      "width": 0,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "actual-method",
+        "gap": 0,
+        "focus": 0"
+      },
+      "endBinding": {
+        "elementId": "return-result",
+        "gap": 0,
+        "focus": "0"
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 1,
+      "id": "arrow11",
+      "x": 320,
+      "y": 910,
+      "width": 80,
+      "height": 0,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "logging-complete",
+        "gap": 0,
+        "focus": "0"
+      },
+      "endBinding": {
+        "elementId": "return-result",
+        "gap": 0,
+        "focus": "0"
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          80,
+          0
+        ]
+      ]
+    },
+    {
+      "type": "arrow",
+      "version": 1,
+      "id": "arrow12",
+      "x": 460,
+      "y": 940",
+      "width": 0,
+      "height": 40,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": {
+        "type": 2
+      },
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "startBinding": {
+        "elementId": "return-result",
+        "gap": 0,
+        "focus": 0"
+      },
+      "endBinding": {
+        "elementId": "end",
+        "gap": 0,
+        "focus": "0"
+      },
+      "lastCommittedPoint": null,
+      "startArrowhead": null,
+      "endArrowhead": "arrow",
+      "points": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          40
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "version": 1,
+      "id": "title",
+      "x": 300,
+      "y": 10,
+      "width": 320,
+      "height": 30,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "Spring AOP 프로젝트 실행 흐름도",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": null,
+      "originalText": "Spring AOP 프로젝트 실행 흐름도",
+      "lineHeight": 1.25,
+      "baseline": 26
+    },
+    {
+      "type": "text",
+      "version": 1,
+      "id": "legend1",
+      "x": 600,
+      "y": 100,
+      "width": 200,
+      "height": 20,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "💡 주요 포인트:",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "💡 주요 포인트:",
+      "lineHeight": 1.25,
+      "baseline": 16
+    },
+    {
+      "type": "text",
+      "version": 1,
+      "id": "legend2",
+      "x": 600,
+      "y": 130,
+      "width": 200,
+      "height": 60,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "roundness": null,
+      "seed": 123456789,
+      "versionNonce": 123456789,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 123456789,
+      "link": null,
+      "locked": false,
+      "text": "• @EnableAspectJAutoProxy로\n  AOP 프록시 자동 생성\n• @ToLog 어노테이션으로\n  메서드 인터셉션\n• LoggingAspect가 자동으로\n  실행되어 로깅 처리",
+      "fontSize": 12,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "• @EnableAspectJAutoProxy로\n  AOP 프록시 자동 생성\n• @ToLog 어노테이션으로\n  메서드 인터셉션\n• LoggingAspect가 자동으로\n  실행되어 로깅 처리",
+      "lineHeight": 1.25,
+      "baseline": 16
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  }
+}
